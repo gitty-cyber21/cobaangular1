@@ -1,4 +1,15 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
+<h1>Tugas Angular 1</h1>
+
+<label *ngFor="let a of output; let i = index">
+	{{a}}
+	<br>
+</label>
+
+	<p>Input :<br/><br/>
+  Baris: <input type="number" [(ngModel)]= "baris"/> <br/>
+  Kolom: <input type="number" [(ngModel)]= "kolom"/>
 </p>
+
+
+<button (click)="DONE()">DONE</button><br/>
+{{winner}}
